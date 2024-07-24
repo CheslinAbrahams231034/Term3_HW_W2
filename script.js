@@ -6,7 +6,7 @@ function calculateAverage(oxygenReadings) {
     let average = sum / oxygenReadings.length;
 
     // Checking if the average is within the safe range
-    if (average >= 19.5 && average <= 23.5) {
+    if (average >= 18.5 && average <= 23.5) {
         return `The average oxygen level is ${average.toFixed(2)}%. Oxygen level is safe.`;
     } else {
         return `The average oxygen level is ${average.toFixed(2)}%. Oxygen level is NOT safe.`;
@@ -66,6 +66,6 @@ let oxygenReadings = [19.45781169874675,
    ;
 console.log(calculateAverage(oxygenReadings));
 
-
+//Finding the sum of the Readings
 let sum = oxygenReadings.reduce((total, currentValue) => total + currentValue, 0);
 console.log(`The sum of all the calibration values is ${sum}`);
